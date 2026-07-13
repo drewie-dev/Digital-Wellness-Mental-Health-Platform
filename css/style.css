@@ -259,3 +259,70 @@
     padding: 1rem;
     border-radius: var(--radius);
 }
+/* =========================================
+   Resource Directory
+   ========================================= */
+
+.resource-category {
+    margin-bottom: 3rem;
+}
+
+.resource-category h2 {
+    display: inline-block;
+    margin-bottom: var(--space-md);
+    padding-bottom: .35rem;
+    border-bottom: 3px solid var(--color-accent);
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.resource-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-card-bg);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    border: 1px solid rgba(74, 124, 120, .15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .1);
+    border-color: var(--color-accent);
+}
+
+.resource-card h3 {
+    margin-top: 0;
+}
+
+.resource-card p {
+    flex-grow: 1;
+}
+
+.resource-card a {
+    align-self: flex-start;
+    margin-top: var(--space-md);
+    padding: .65rem 1rem;
+    border-radius: 999px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition:
+        background-color .3s ease,
+        transform .3s ease;
+}
+
+.resource-card a:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
