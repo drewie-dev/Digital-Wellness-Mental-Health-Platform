@@ -27,6 +27,11 @@ wellness-hub/
 │   └── data.php     (PHP arrays: $resources, $tips)
 ├── css/
 │   └── style.css
+├── images/
+│   ├── breathing.png
+│   ├── logo.jpg
+│   ├── meditate_1.jpg
+│   └── meditate_2.jpg
 ├── index.php
 ├── resources.php
 ├── checkin.php
