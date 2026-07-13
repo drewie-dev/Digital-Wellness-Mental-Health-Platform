@@ -132,3 +132,50 @@
     text-decoration: line-through;
     opacity: .7;
 }
+/* =========================================
+   Guided Breathing Exercise
+   ========================================= */
+
+.breathing-section {
+    margin-top: var(--space-lg);
+    text-align: center;
+    padding: var(--space-lg);
+}
+
+.breathing-section p {
+    margin-bottom: var(--space-lg);
+    color: var(--color-text);
+}
+
+.breathing-circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        var(--color-accent),
+        var(--color-primary)
+    );
+    animation: breathe 8s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(74, 124, 120, 0.35);
+}
+
+@keyframes breathe {
+
+    0% {
+        transform: scale(1);
+        opacity: .8;
+    }
+
+    50% {
+        transform: scale(1.6);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .8;
+    }
+
+}
