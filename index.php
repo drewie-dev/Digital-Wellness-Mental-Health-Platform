@@ -11,30 +11,27 @@ include "includes/header.php";
 ?>
 
 <section class="hero">
-    <div class="hero content">
-        <h1>You don't have to have it all figured out today.</h1>
-        <p>Wellness Hub is a quiet space for college students to find real support, check in with how you're feeling, and take a small break when you need one.</p>
-    </div>
-    <img src="images/meditate_2.jpg" alt="Illustration of a person meditating calmly among plants" class="hero img">
+    <h1>You don't have to have it all figured out today.</h1>
+    <p>Wellness Hub is a quiet space for college students to find real support, check in with how you're feeling, and take a small break when you need one.</p>
 </section>
 
-<section class="daily tip">
+<section class="daily-tip">
     <h2>Today's Tip</h2>
     <p><?php echo htmlspecialchars($todayTip); ?></p>
 </section>
 
-<section class="home links">
-    <div class="link card">
+<section class="home-links">
+    <div class="link-card">
         <h3>Resources</h3>
         <p>Crisis lines, campus counseling, apps, and articles in one place.</p>
         <a href="resources.php">Browse Resources &rarr;</a>
     </div>
-    <div class="link card">
+    <div class="link-card">
         <h3>Mood Check In</h3>
         <p>Take thirty seconds to log how you're feeling today.</p>
         <a href="checkin.php">Check In &rarr;</a>
     </div>
-    <div class="link card">
+    <div class="link-card">
         <h3>Self Care</h3>
         <p>A short breathing exercise, an affirmation, and a self care checklist.</p>
         <a href="selfcare.php">Take a Break &rarr;</a>
