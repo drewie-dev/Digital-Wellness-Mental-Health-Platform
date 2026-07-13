@@ -12,3 +12,7 @@ A Digital Wellness & Mental Health Platform built for college students
 ## Bugs / Fixes
 
 - Bug found: The affirmation carousel worked with mouse clicks, but keyboard focus was not visible when navigating the radio controls.
+- Fix: Added a `:focus-within` outline on `.carousel` so keyboard users get a visible focus indicator when tabbing through the affirmation slides.
+
+- Bug found: Site styling was not rendering correctly like buttons had no background color, spacing was inconsistent, and the navigation bar did not display as a proper header. The page loaded with only partial styling (fonts and some layout worked, but colors and consistent spacing did not).
+- Fix: Added the missing `:root` variable definitions and base layout styles (header/nav, `.site-main`, form styles, responsive breakpoints) to the top of `style.css`. Verified with a hard refresh that colors, spacing, and layout now render as intended across all four pages.

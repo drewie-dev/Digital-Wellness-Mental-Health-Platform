@@ -1,4 +1,209 @@
 /* =========================================
+   CSS custom properties (variables)
+   Defined once here so colors/spacing stay
+   consistent everywhere and are easy to tweak.
+   ========================================= */
+:root {
+    --color-bg: #f4faf8;
+    --color-primary: #4a7c78;
+    --color-primary-dark: #345c58;
+    --color-accent: #a9d6c5;
+    --color-text: #2e3b3a;
+    --color-card-bg: #ffffff;
+    --color-error: #b3261e;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--color-primary-dark);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+/* =========================================
+   Header / Nav
+   ========================================= */
+.site-header {
+    background-color: var(--color-card-bg);
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--space-md);
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-lg);
+}
+
+.hero, .page-intro {
+    margin-bottom: var(--space-lg);
+}
+
+.daily-tip {
+    background-color: var(--color-accent);
+    border-radius: var(--radius);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.home-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.link-card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--radius);
+    padding: var(--space-md);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.site-footer {
+    text-align: center;
+    padding: var(--space-lg);
+    font-size: 0.9rem;
+    color: var(--color-primary-dark);
+}
+
+/* =========================================
+   Mood check-in form
+   ========================================= */
+.checkin-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 var(--space-md) 0;
+}
+
+.radio-option {
+    display: inline-block;
+    margin-right: var(--space-md);
+    background-color: var(--color-card-bg);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius);
+    margin-bottom: var(--space-sm);
+}
+
+.checkin-form textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border-radius: var(--radius);
+    border: 1px solid var(--color-accent);
+    font-family: inherit;
+}
+
+.checkin-form button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: var(--space-sm);
+}
+
+.checkin-confirmation {
+    background-color: var(--color-accent);
+    padding: var(--space-md);
+    border-radius: var(--radius);
+    margin-bottom: var(--space-md);
+}
+
+.form-error {
+    color: var(--color-error);
+    font-weight: bold;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-links,
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .home-links,
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-option {
+        display: block;
+        padding: var(--space-md);
+    }
+
+    .checkin-form button {
+        width: 100%;
+        padding: var(--space-md);
+    }
+
+    .dot {
+        width: 16px;
+        height: 16px;
+    }
+
+    .carousel-dots {
+        gap: var(--space-md);
+    }
+}
+/* =========================================
    CSS only affirmation carousel
    ========================================= */
 
