@@ -176,6 +176,30 @@ a {
     .resource-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    @media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-links,
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero,
+    .selfcare-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img,
+    .intro-img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+}
 }
 
 @media (max-width: 480px) {
@@ -405,6 +429,7 @@ a {
 
 .hero-content {
     max-width: 700px;
+  
 }
 
 .hero h1 {
@@ -539,3 +564,69 @@ a {
     background-color: var(--color-primary-dark);
     transform: translateY(-2px);
 }
+
+
+/* Logo image sizing (add gap/flex to your existing .logo rule,
+   or just add this whole block if .logo doesn't have them yet) */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.logo-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hero image: sits beside the hero text, sized down */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.hero-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+}
+
+/* Self-care intro image */
+.selfcare-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.intro-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+}
+
+/* Breathing exercise image, next to the animated circle */
+.breathing-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.breathing-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+

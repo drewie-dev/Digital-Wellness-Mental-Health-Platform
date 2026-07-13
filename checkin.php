@@ -2,7 +2,7 @@
 // session_start() must run before any HTML output, so this stays at the very top of the file, above the header
 session_start();
 
-$pageTitle = "Mood Check-In";
+$pageTitle = "Mood Check In";
 $error = "";
 
 // Handle the form submission
@@ -25,17 +25,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 include "includes/header.php";
 ?>
 
-<section class="page-intro">
-    <h1>Mood Check-In</h1>
+<section class="page intro">
+    <h1>Mood Check In</h1>
     <p>Take a moment to notice how you're feeling.</p>
 </section>
 
 <?php if ($error): ?>
-    <p class="form-error"><?php echo htmlspecialchars($error); ?></p>
+    <p class="form error"><?php echo htmlspecialchars($error); ?></p>
 <?php endif; ?>
 
 <?php if (isset($_SESSION["mood"]) && $_SERVER["REQUEST_METHOD"] === "POST" && !$error): ?>
-    <section class="checkin-confirmation">
+    <section class="checkin confirmation">
         <h2>Thanks for checking in.</h2>
         <p>You logged your mood as <strong><?php echo $_SESSION["mood"]; ?></strong> at <?php echo $_SESSION["checkin_time"]; ?>.</p>
         <?php if (!empty($_SESSION["note"])): ?>
@@ -44,23 +44,23 @@ include "includes/header.php";
     </section>
 <?php endif; ?>
 
-<form class="checkin-form" method="POST" action="checkin.php">
+<form class="checkin form" method="POST" action="checkin.php">
     <fieldset>
         <legend>How are you feeling right now?</legend>
 
-        <label class="radio-option">
+        <label class="radio option">
             <input type="radio" name="mood" value="Great" required>
             Great
         </label>
-        <label class="radio-option">
+        <label class="radio option">
             <input type="radio" name="mood" value="Okay">
             Okay
         </label>
-        <label class="radio-option">
+        <label class="radio option">
             <input type="radio" name="mood" value="Stressed">
             Stressed
         </label>
-        <label class="radio-option">
+        <label class="radio option">
             <input type="radio" name="mood" value="Struggling">
             Struggling
         </label>

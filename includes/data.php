@@ -35,7 +35,7 @@ $resources = [
     [
         "type" => "Campus Counseling",
         "title" => "Group Support Groups",
-        "description" => "Weekly student-led groups covering stress, grief, and academic pressure.",
+        "description" => "Weekly student led groups covering stress, grief, and academic pressure.",
         "link" => "https://counseling.gsu.edu/group-counseling/"
     ],
     [
@@ -47,7 +47,7 @@ $resources = [
     [
         "type" => "App",
         "title" => "Headspace",
-        "description" => "Bite-sized mindfulness sessions built for busy schedules.",
+        "description" => "Bite sized mindfulness sessions built for busy schedules.",
         "link" => "https://www.headspace.com"
     ],
     [
@@ -70,8 +70,8 @@ $resources = [
 // to line the current weekday up with this array.
 $tips = [
     "Start today with one small, achievable task. Momentum matters more than perfection.",
-    "Take a 5-minute walk between classes. Movement resets your focus.",
-    "Midweek check-in: how many hours of sleep did you get last night?",
+    "Take a 5 minute walk between classes. Movement resets your focus.",
+    "Midweek check in: how many hours of sleep did you get last night?",
     "It's okay to say no to plans if you need a quiet night to recharge.",
     "You made it to Friday. Take a moment to acknowledge what you got through this week.",
     "Weekends are for rest too, not just catching up. Protect some downtime.",

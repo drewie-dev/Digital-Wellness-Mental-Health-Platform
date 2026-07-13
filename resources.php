@@ -12,7 +12,7 @@ foreach ($resources as $resource) {
 include "includes/header.php";
 ?>
 
-<section class="page-intro">
+<section class="page intro">
     <h1>Resources</h1>
     <p>
         A curated collection of mental health resources organized by category,
@@ -22,17 +22,17 @@ include "includes/header.php";
 
 <?php foreach ($grouped as $category => $items): ?>
 
-<section class="resource-category">
+<section class="resource category">
 
     <h2><?php echo htmlspecialchars($category); ?></h2>
 
-    <div class="resource-grid">
+    <div class="resource grid">
 
         <?php foreach ($items as $item): ?>
 
-        <article class="resource-card">
+        <article class="resource card">
 
-            <div class="resource-icon">🌿</div>
+            <div class="resource icon">🌿</div>
 
             <h3>
                 <?php echo htmlspecialchars($item["title"]); ?>
