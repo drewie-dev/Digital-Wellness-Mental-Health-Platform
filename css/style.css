@@ -507,10 +507,20 @@ a:hover {
     50% { transform: scale(1.6); }
 }
 
-.site-footer {
-    border-top: 1px solid var(--color-border);
-    background: var(--color-primary-dark);
-    color: #eaf4f1;
+.site-footer,
+.site.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--color-accent);
+    background: #ffffff;
+    color: var(--color-primary-dark);
+    font-size: 0.95rem;
+}
+
+.site-footer p,
+.site.footer p {
+    margin: 0.5rem 0;
 }
 
 .footer-inner {
