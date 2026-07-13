@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Viewport meta tag is required for responsive design to work on mobile -->
+    <!-- Viewport meta tag for responsive design to work on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) . " - Wellness Hub" : "Wellness Hub"; ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Shared site header + nav. This file is pulled into every page
-     with include(), so nav only has to be written once. -->
+<!-- Shared site header and nav. File is pulled into every page with include(), so nav only has to be written once. -->
 <header class="site-header">
     <div class="header-inner">
         <a href="index.php" class="logo">🌿 Wellness Hub</a>

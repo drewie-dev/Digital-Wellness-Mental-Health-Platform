@@ -4,7 +4,7 @@
 // Kept separate from page markup so any page can include() this
 // file and get access to $resources / $tips without duplicating data.
 
-// ---- Resource directory ----
+// Resource directory
 // Each resource has: type, title, description, link.
 // "type" is what resources.php groups by to build category sections.
 $resources = [
@@ -21,16 +21,22 @@ $resources = [
         "link" => "https://www.crisistextline.org"
     ],
     [
-        "type" => "Campus Counseling",
-        "title" => "Campus Counseling Center",
+        "type" => "Campus 24/7 Crisis Consultation",
+        "title" => "Campus Free Call in Crisis Consultation",
         "description" => "Free, confidential counseling sessions available to all enrolled students.",
-        "link" => "#"
+        "link" => "https://counseling.gsu.edu/crisis-consultation/"
     ],
     [
         "type" => "Campus Counseling",
-        "title" => "Peer Support Groups",
+        "title" => "Campus Counseling Center",
+        "description" => "Free, confidential counseling sessions available to all enrolled students.",
+        "link" => "https://counseling.gsu.edu/counseling-sessions/"
+    ],
+    [
+        "type" => "Campus Counseling",
+        "title" => "Group Support Groups",
         "description" => "Weekly student-led groups covering stress, grief, and academic pressure.",
-        "link" => "#"
+        "link" => "https://counseling.gsu.edu/group-counseling/"
     ],
     [
         "type" => "App",
@@ -48,18 +54,18 @@ $resources = [
         "type" => "Article",
         "title" => "Managing Exam Stress",
         "description" => "Practical strategies for staying grounded during finals week.",
-        "link" => "#"
+        "link" => "https://activeminds.org/blog/how-to-stay-calm-and-focused-during-finals-week/"
     ],
     [
         "type" => "Article",
         "title" => "Building a Sleep Routine in College",
-        "description" => "Why sleep matters for mental health and how to protect it.",
-        "link" => "#"
+        "description" => "Why sleep matters for mental health",
+        "link" => "https://med.stanford.edu/news/insights/2025/08/sleep-mental-health-connection-what-science-says.html"
     ],
 ];
 
-// ---- Daily tips ----
-// Index 0 = Monday ... Index 6 = Sunday.
+// Daily tips
+// Index 0 = Monday - Index 6 = Sunday.
 // date('N') returns 1 (Mon) through 7 (Sun), so index.php subtracts 1
 // to line the current weekday up with this array.
 $tips = [
