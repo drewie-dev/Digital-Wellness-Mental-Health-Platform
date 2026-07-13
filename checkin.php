@@ -1,5 +1,5 @@
 <?php
-// session_start() must run before any HTML output, so this stays at the very top of the file, above the header include
+// session_start() must run before any HTML output, so this stays at the very top of the file, above the header
 session_start();
 
 $pageTitle = "Mood Check-In";
@@ -27,7 +27,7 @@ include "includes/header.php";
 
 <section class="page-intro">
     <h1>Mood Check-In</h1>
-    <p>Take a moment to notice how you're feeling. This isn't tracked long-term or shared &mdash; it's just for you.</p>
+    <p>Take a moment to notice how you're feeling.</p>
 </section>
 
 <?php if ($error): ?>
