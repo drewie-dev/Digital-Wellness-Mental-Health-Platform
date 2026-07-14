@@ -15,7 +15,7 @@
 
 ## Selected Questions 
 
-Use this section to list the specific Project1Q&A questions your team selected for presentation.
+Use this section to list the specific Project1 Q&A questions your team selected for presentation.
 
 1. Question: How did you use PHP include() to manage shared components like your header, footer, and navigation? Walk through your includes directory and explain how this approach reduces code duplication and keeps your HTML pages clean.
    - Category: Structure
